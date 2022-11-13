@@ -39,7 +39,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   // Update a course
-  updateCourse(req, res) {
+  updateUser(req, res) {
     Course.findOneAndUpdate(
       { _id: req.params.courseId },
       { $set: req.body },
