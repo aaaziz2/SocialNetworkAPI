@@ -35,7 +35,7 @@ const userSchema = new Schema(
   }
 );
 
-// Create a virtual property `commentCount` that gets the amount of comments per user
+// Create a virtual property `friendCount` that gets the amount of friends per user
 userSchema
   .virtual('friendCount')
   // Getter
